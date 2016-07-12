@@ -1,0 +1,52 @@
+
+body {
+  background: rgb(99, 89, 105);
+  font-family: 'Bevan', sans-serif;
+}
+
+div.text {
+  font-size: 6rem;
+  width: 80%;
+  margin: 5% auto; /* ?? */
+  text-align: center;
+  perspective: 800px;
+}
+
+span {
+  display: inline-block;
+  color: rgb(154, 129, 52);
+  transform-origin: 50% 70%;
+  margin-right: .6rem;
+}
+
+span:nth-child(2n) {
+  color: rgb(162, 178, 227);
+}
+
+span:nth-child(1) {
+  animation: flipUp 1s cubic-bezier(0.68, -0.55, 0.26, 1.55) both;
+}
+span:nth-child(2) {
+  animation: flipUp 1s 0.2s cubic-bezier(0.68, -0.55, 0.26, 1.55) both;
+}
+span:nth-child(3) {
+  animation: flipUp 1s 0.4s cubic-bezier(0.68, -0.55, 0.26, 1.55) both;
+}
+span:nth-child(4) {
+  animation: flipUp 1s 0.6s cubic-bezier(0.68, -0.55, 0.26, 1.55) both;
+}
+span:nth-child(5) {
+  animation: flipUp 1s 0.8s cubic-bezier(0.68, -0.55, 0.26, 1.55) both;
+}
+span:nth-child(6) {
+  animation: flipUp 1s 1s cubic-bezier(0.68, -0.55, 0.26, 1.55) both;
+}
+span:nth-child(7) {
+  animation: flipUp 1s 1.2s cubic-bezier(0.68, -0.55, 0.26, 1.55) both;
+}
+
+
+@keyframes flipUp {
+  from {transform: rotateX(90deg);}
+  to {transform: rotateX(0deg);}
+}
