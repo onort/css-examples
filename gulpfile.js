@@ -43,7 +43,7 @@ gulp.task('css', function() {
   return gulp
     .src(css.in)
     .pipe(autoprefix({
-      browsers:['> 5%']
+      browsers:['> 3%']
     }))
     .pipe(gulp.dest(css.out))
     .pipe(browsersync.reload({ stream: true }));

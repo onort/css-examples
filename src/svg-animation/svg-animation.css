@@ -1,0 +1,39 @@
+body {
+  background: #FDFDFD;
+  margin: 25px 0;
+  overflow: hidden;
+}
+
+.basic {
+  width: 140px;
+  height: 60px;
+  margin: 15px auto;
+  color: rgb(16, 86, 244);
+  font-size: 1.5rem;
+  line-height: 65px;
+  text-align: center;
+  position: relative;
+  cursor: pointer;
+}
+
+.basic:hover svg rect { /*?*/
+  stroke: rgb(16, 86, 244);
+  stroke-width: 6;
+  stroke-dasharray: 80, 320;
+  stroke-dashoffset: -230;
+}
+
+
+svg {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+svg rect {
+  fill: none;
+  stroke: rgb(16, 86, 244);
+  stroke-width: 2;
+  stroke-dasharray: 400;
+  transition: all .8s ease-in-out;
+}

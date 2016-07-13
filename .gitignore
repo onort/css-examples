@@ -1,2 +1,5 @@
 node_modules
 build
+*.txt
+src/push-over
+src/sliding-door
